@@ -2,6 +2,7 @@ package org.pahappa.utils.egosms;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import lombok.Builder;
 import okhttp3.*;
 import org.pahappa.utils.egosms.models.MessageData;
 import org.pahappa.utils.egosms.models.SmsRequest;
@@ -21,6 +22,7 @@ import java.util.logging.Logger;
  * @version 1.0
  * @apiNote require Java 8+
  */
+@Builder
 public class EgoSmsClient {
 
     private static final MediaType JSON_MEDIA_TYPE = MediaType.parse("application/json");
